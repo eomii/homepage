@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "eomii",
+  "short_name": "Bleeding Edge Software Infrastructure",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "The eomii homepage."
+}

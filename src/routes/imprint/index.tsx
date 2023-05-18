@@ -1,36 +1,43 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
+import { component$ } from "@builder.io/qwik";
+import type { DocumentHead } from "@builder.io/qwik-city";
 
-    <!-- Meta Tags -->
-    <meta http-equiv="Content Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <div id="scrollable-content">
+export default component$(() => {
+  return (
+    <>
       <div>
-        <h1>Imprint</h1>
-        <p>
-          eomii UG<br />
-          Jordanstr. 47<br />
-          60486 Frankfurt am Main<br />
-          Germany<br />
+        <h1 class="text-center text-transparent text-7xl pb-5">Imprint</h1>
+        <p class="text-center text-xl text-transparent mb-3">
+          eomii UG
           <br />
-          Hesse District Court Frankfurt am Main HRB 110247<br />
+          Jordanstr. 47
           <br />
-          Represented by Aaron Siddhartha Mondal and Jannis Marcel Fengler<br />
-          {aaron,jannis}@eomii.org<br />
+          60486 Frankfurt am Main
+          <br />
+          Germany
+          <br />
+          <br />
+          Hesse District Court Frankfurt am Main HRB 110247
+          <br />
+          <br />
+          Represented by Aaron Siddhartha Mondal and Jannis Marcel Fengler
+          <br />'{"aaron,jannis"}'@eomii.org
+          <br />
           <br />
           The source code for this website is available on
-          <a href="https://github.com/eomii/homepage">GitHub</a>.<br />
+          <a
+            class="text-ii-mediumpink"
+            href="https://github.com/eomii/homepage"
+          >
+            {" "}
+            GitHub
+          </a>
+          .<br />
         </p>
 
-        <h2>Limitation of liability for internal content</h2>
-        <p>
+        <h2 class="text-center text-transparent text-4xl mt-10">
+          Limitation of liability for internal content
+        </h2>
+        <p class="text-center text-xl text-transparent mb-3">
           The content of our website has been compiled with meticulous care and
           to the best of our knowledge. However, we cannot assume any liability
           for the up-to-dateness, completeness or accuracy of any of the pages.
@@ -45,8 +52,10 @@
           from the point in time at which the infringement becomes known to us.
         </p>
 
-        <h2>Limitation of liability for external links</h2>
-        <p>
+        <h2 class="text-center text-transparent text-4xl mt-10">
+          Limitation of liability for external links
+        </h2>
+        <p class="text-center text-xl text-transparent mb-3">
           Our website contains links to the websites of third parties (“external
           links”). As the content of these websites is not under our control, we
           cannot assume any liability for such external content. In all cases,
@@ -57,8 +66,8 @@
           known to us, we will immediately remove the link in question.
         </p>
 
-        <h2>Copyright</h2>
-        <p>
+        <h2 class="text-center text-transparent text-4xl mt-10">Copyright</h2>
+        <p class="text-center text-xl text-transparent mb-3">
           The content and works published on this website are governed by the
           copyright laws of Germany. Any duplication, processing, distribution
           or any form of utilisation beyond the scope of copyright law shall
@@ -66,8 +75,10 @@
           question.
         </p>
 
-        <h2>Data protection</h2>
-        <p>
+        <h2 class="text-center text-transparent text-4xl mt-10">
+          Data protection
+        </h2>
+        <p class="text-center text-xl text-transparent mb-3">
           A visit to our website can result in the storage on our server of
           information about the access (date, time, page accessed). This does
           not represent any analysis of personal data (e.g., name, address or
@@ -86,6 +97,16 @@
           means of spam mail.
         </p>
       </div>
-    </div>
-  </body>
-</html>
+    </>
+  );
+});
+
+export const head: DocumentHead = {
+  title: "eomii - imprint",
+  meta: [
+    {
+      name: "description",
+      content: "eomii imprint",
+    },
+  ],
+};
