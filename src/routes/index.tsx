@@ -76,25 +76,6 @@ const RulesLl: ProjectProps = {
   ],
 };
 
-const Qogecoin: ProjectProps = {
-  name: "Qogecoin",
-  description: "Blockchain aiming for post-quantum safety",
-  references: [
-    {
-      url: "https://github.com/qogecoin/qogecoin",
-      description: "GitHub",
-    },
-    {
-      url: "https://qogecoin.org",
-      description: "Website",
-    },
-    {
-      url: "https://twitter.com/qogecoin",
-      description: "Twitter",
-    },
-  ],
-};
-
 export default component$(() => {
   return (
     <>
