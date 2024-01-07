@@ -92,7 +92,6 @@ export default component$(() => {
           <h2 class="text-center text-transparent text-4xl mt-10">Projects</h2>
 
           <Project {...RulesLl} />
-          <Project {...Qogecoin} />
 
           <h2 class="text-center text-transparent text-4xl mt-10">Team</h2>
 
