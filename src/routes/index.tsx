@@ -82,18 +82,18 @@ export default component$(() => {
       <div class="flex max-w-md py-2.5">
         <div>
           <h1 class="text-center text-transparent text-7xl">eomii</h1>
-          <h4 class="text-right text-xl text-transparent -rotate-12">
+          <h2 class="text-right text-xl text-transparent -rotate-12">
             えおみい!
-          </h4>
+          </h2>
           <p class="rotate-6 text-center text-xl text-transparent mb-3">
             (/*.*)/ Bleeding Edge Software Infrastructure \(*.*\)
           </p>
 
-          <h2 class="text-center text-transparent text-4xl mt-10">Projects</h2>
+          <h3 class="text-center text-transparent text-4xl mt-10">Projects</h3>
 
           <Project {...RulesLl} />
 
-          <h2 class="text-center text-transparent text-4xl mt-10">Team</h2>
+          <h3 class="text-center text-transparent text-4xl mt-10">Team</h3>
 
           <TeamMember {...AaronMondal} />
           <TeamMember {...JannisFengler} />
@@ -141,9 +141,9 @@ interface ProjectProps {
 const TeamMember = component$<TeamMemberProps>((props) => {
   return (
     <>
-      <h3 class="text-left text-3xl text-transparent -rotate-6 mb-6">
+      <h4 class="text-left text-3xl text-transparent -rotate-6 mb-6">
         {props.name}
-      </h3>
+      </h4>
       {props.references.map((ref, index) => (
         <p class="text-center text-xl text-transparent mb-3" key={index}>
           <ReferenceLink url={ref.url} description={ref.description} />
@@ -157,9 +157,9 @@ const Project = component$<ProjectProps>((props) => {
   return (
     <>
       <div>
-        <h3 class="text-left text-3xl text-transparent -rotate-6 mb-6">
+        <h4 class="text-left text-3xl text-transparent -rotate-6 mb-6">
           {props.name}
-        </h3>
+        </h4>
         <p class="text-center text-xl text-transparent mb-3">
           {props.description}
         </p>
