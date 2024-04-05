@@ -37,6 +37,10 @@ const JaroEichler: TeamMemberProps = {
   name: "Jaro",
   references: [
     {
+      url: "https://github.com/jaroeichler",
+      description: "GitHub @jaroeichler",
+    },
+    {
       url: "https://www.uni-frankfurt.de/115631621/M_Sc__Jaro_Eichler",
       description: "GoetheUniversity",
     },
