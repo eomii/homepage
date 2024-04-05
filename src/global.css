@@ -23,6 +23,16 @@ h1 {
 }
 
 h2 {
+  text-shadow: 0px 0px 0.05rem oklch(65% 0.3 145); /* ii-lightgreen */
+  background: linear-gradient(
+    345deg in oklch longer hue,
+    oklch(65% 0.295 99),
+    oklch(65% 0.295 120)
+  );
+  background-clip: text;
+}
+
+h3 {
   text-shadow: 0px 0px 0.05rem oklch(70% 0.3 0); /* ii-lightblue */
   background: linear-gradient(
     5deg in oklch longer hue,
@@ -32,7 +42,7 @@ h2 {
   background-clip: text;
 }
 
-h3 {
+h4 {
   text-shadow: 0px 0px 0.05rem oklch(65% 0.2 22); /* ii-lightred */
   background: linear-gradient(
     15deg in oklch longer hue,
@@ -58,16 +68,6 @@ a {
     0deg in oklch longer hue,
     oklch(65% 0.295 99),
     oklch(65% 0.295 300)
-  );
-  background-clip: text;
-}
-
-h4 {
-  text-shadow: 0px 0px 0.05rem oklch(65% 0.3 145); /* ii-lightgreen */
-  background: linear-gradient(
-    345deg in oklch longer hue,
-    oklch(65% 0.295 99),
-    oklch(65% 0.295 120)
   );
   background-clip: text;
 }
